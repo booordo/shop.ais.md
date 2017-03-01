@@ -1,0 +1,31 @@
+$main_site_color: #00aeef;
+$hover_site_color: darken($main_site_color, 7);
+$main_site_font: "Open Sans", sans-serif;
+$main_site_padding: 30px;
+
+$main_text_color: #444444;
+$small_text_color: #9f9f9f;
+$headers_text_color: #000000;
+
+$main_text_size: 14px;
+$small_text_size: 0.8333333333333333rem;
+$h6_text_size: 1.166666666666667rem;
+$h5_text_size: 1.333333333333333rem;
+$h4_text_size: 1.5rem;
+$h3_text_size: 1.666666666666667rem;
+$h2_text_size: 2rem;
+$h1_text_size: 3rem;
+
+$border_color: #dddddd;
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+	
+}
+
+@media all and (max-width: 650px) {
+
+}

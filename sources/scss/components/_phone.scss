@@ -1,0 +1,36 @@
+.phone {
+	display: flex;
+	align-items: center;
+}
+
+.phone__img {
+	margin-right: 10px;
+	color: $main_site_color;
+	font-size: 3rem;
+	line-height: 1em;
+}
+
+.phone__desc {
+	color: #000;
+}
+
+.phone__title {
+	display: block;
+	font-weight: 700;
+}
+
+.phone__text {
+	
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+
+}
+
+@media all and (max-width: 650px) {
+	
+}

@@ -1,0 +1,15 @@
+include ../data/_pages
+
+nav.navbar
+	a.navbar__bars
+		i.fa.fa-bars
+	ul.navbar__list
+		each page in pages
+			li.navbar__item
+				a.navbar__link(href=page.href)= page.name
+				if page.items
+					ul.navbar__sublist
+						each item in page.items
+							li.navbar__item
+								a.navbar__link(href=item.href)= item.name
+

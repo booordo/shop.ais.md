@@ -1,0 +1,40 @@
+.search {
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+}
+
+.search__input {
+	padding: 7px 10px;
+	width: 100%;
+}
+
+.search__button {
+	display: inline-block;
+	font-family: "FontAwesome";
+	color: $main_site_color;
+	background-color: transparent;
+	font-size: 1.2rem;
+	outline: none;
+	border: none;
+	position: absolute;
+	z-index: 500;
+	cursor: pointer;
+	right: 5px;
+	top: 6px;
+	&:hover {
+		color: $hover_site_color;
+	}
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+	
+}
+
+@media all and (max-width: 650px) {
+
+}

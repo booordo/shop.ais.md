@@ -1,0 +1,24 @@
+.logo {
+	
+}
+
+.logo__link {
+	font-weight: 400;
+	font-size: $h2_text_size;
+	color: $main_site_color;
+	&:hover {
+		color: $hover_site_color;
+	}
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+
+}
+
+@media all and (max-width: 650px) {
+	
+}
