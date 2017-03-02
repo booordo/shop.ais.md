@@ -1,0 +1,8 @@
+include ../data/_pages
+
+.navbar.navbar_bottom
+	h2.navbar__title.navbar__list_bottom Категории
+	ul.navbar__list.navbar__list_bottom
+		each page in pages
+			li.navbar__item.navbar__item_bottom
+				a.navbar__link.navbar__link_bottom(href=page.href)= page.name

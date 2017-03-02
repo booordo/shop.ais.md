@@ -1,5 +1,25 @@
+html {
+	font-family: $main_site_font;
+	font-size: $main_text_size;
+	color: $main_text_color;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+}
+
 * {
 	box-sizing: border-box;
+}
+
+input[type="text"] {
+	font-family: inherit;
+	border: 1px solid $border_color;
+	&:focus {
+		outline-color: $main_site_color;
+	}
 }
 
 .wrapper {
