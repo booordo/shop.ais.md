@@ -11,33 +11,37 @@
     <header class="header">
       <div class="header__top">
         <div class="wrapper header__top-wrapper">
-          <ul class="controls">
-            <li class="controls__item"><a class="controls__link">Сигурко Глеб</a>
-              <ul class="controls__sublist">
-                <li class="controls__subitem"><a class="controls__link">Кабинет</a></li>
-                <li class="controls__subitem"><a class="controls__link">Выйти</a></li>
+          <div class="header__switch">
+            <div class="header__lang">Язык:
+              <ul class="controls">
+                <li class="controls__item"><a class="controls__link">Русский
+                    <div class="controls__icon" style="background-image: url(images/ru.gif);"></div></a>
+                  <ul class="controls__sublist">
+                    <li class="controls__subitem"><a class="controls__link">
+                        <div class="controls__icon" style="background-image: url(images/ro.gif);"></div>Romana</a></li>
+                    <li class="controls__subitem"><a class="controls__link">
+                        <div class="controls__icon" style="background-image: url(images/en.gif);"></div>English</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-          <ul class="controls">
-            <li class="controls__item"><a class="controls__link">
-                <div class="controls__icon"></div>RU</a>
-              <ul class="controls__sublist">
-                <li class="controls__subitem"><a class="controls__link">
-                    <div class="controls__icon"></div>RO</a></li>
-                <li class="controls__subitem"><a class="controls__link">
-                    <div class="controls__icon"></div>EN</a></li>
+            </div>
+            <div class="header__currency">Валюта:
+              <ul class="controls">
+                <li class="controls__item"><a class="controls__link">MDL</a>
+                  <ul class="controls__sublist">
+                    <li class="controls__subitem"><a class="controls__link">USD</a></li>
+                    <li class="controls__subitem"><a class="controls__link">EUR</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-          <ul class="controls">
-            <li class="controls__item"><a class="controls__link">MDL</a>
-              <ul class="controls__sublist">
-                <li class="controls__subitem"><a class="controls__link">USD</a></li>
-                <li class="controls__subitem"><a class="controls__link">EUR</a></li>
-              </ul>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div class="header__auth">
+            <ul class="controls">
+              <li class="controls__item"><a class="controls__link">Сигурко Глеб</a></li>
+              <li class="controls__item"><a class="controls__link">Выйти</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="header__middle">
@@ -88,23 +92,39 @@
         </div>
       </div>
     </header>
+    <div class="main wrapper">
+      <h1>Hello Moto!</h1>
+    </div>
     <footer class="footer">
       <div class="footer__top">
         <div class="wrapper footer__top-wrapper">
-          <div class="footer__social"></div>
-          <div class="footer__newsletter"></div>
+          <div class="footer__social">
+            <div class="social"><a class="social__link" href="#"><i class="fa fa-facebook fa-2x"></i></a><a class="social__link" href="#"><i class="fa fa-twitter fa-2x"></i></a><a class="social__link" href="#"><i class="fa fa-rss fa-2x"></i></a><a class="social__link" href="#"><i class="fa fa-google-plus fa-2x"></i></a><a class="social__link" href="#"><i class="fa fa-pinterest-p fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="footer__newsletter">
+            <div class="newsletter">
+              <div class="newsletter__desc"><span class="fa fa-stack fa-2x"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x"></i></span><span class="newsletter__title">Подпишись на нашу рассылку</span></div>
+              <form class="newsletter__form">
+                <input class="newsletter__input" placeholder="Введите свой e-mail">
+                <input class="newsletter__button" type="submit" value="Подисаться">
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__middle">
         <div class="wrapper footer__middle-wrapper">
-          <div class="footer__desc">
-            <h1 class="footer__desc-title">Магазин на 1С:Битрикс</h1>
-            <h3 class="footer__desc-subtitle">Все что вам нужно в одном месте</h3>
-            <p class="footer__desc-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores labore quasi ipsam officia velit consequatur natus nam itaque minus ratione iure tempora in nostrum quidem impedit</p>
+          <div class="footer__desc-wrapper">
+            <div class="footer__desc">
+              <h1 class="footer__desc-title">Магазин на 1С:Битрикс</h1>
+              <h3 class="footer__desc-subtitle">Все что вам нужно в одном месте</h3>
+              <p class="footer__desc-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores labore quasi ipsam officia velit consequatur natus nam itaque minus ratione iure tempora in nostrum quidem impedit</p>
+            </div>
           </div>
           <div class="footer__navbar">
             <div class="navbar navbar_bottom">
-              <h2 class="navbar__title navbar__list_bottom">Категории</h2>
+              <h2 class="navbar__title">Категории</h2>
               <ul class="navbar__list navbar__list_bottom">
                 <li class="navbar__item navbar__item_bottom"><a class="navbar__link navbar__link_bottom" href="index.html">Главная</a></li>
                 <li class="navbar__item navbar__item_bottom"><a class="navbar__link navbar__link_bottom" href="sections.html">Каталог</a></li>
@@ -116,7 +136,7 @@
           </div>
           <div class="footer__navbar">
             <div class="navbar navbar_bottom">
-              <h2 class="navbar__title navbar__list_bottom">Категории</h2>
+              <h2 class="navbar__title">Категории</h2>
               <ul class="navbar__list navbar__list_bottom">
                 <li class="navbar__item navbar__item_bottom"><a class="navbar__link navbar__link_bottom" href="index.html">Главная</a></li>
                 <li class="navbar__item navbar__item_bottom"><a class="navbar__link navbar__link_bottom" href="sections.html">Каталог</a></li>
@@ -126,10 +146,12 @@
               </ul>
             </div>
           </div>
-          <div class="footer__contactus">
-            <h2 class="footer__contactus-title">Свяжитесь с нами</h2>
-            <p class="footer__contactus-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae fugiat libero similique, perferendis ut cumque sed ad reiciendis veritatis nostrum. Harum voluptates repudiandae inventore quo.</p>
-            <div class="footer__contactus-pays"><i class="fa fa-cc-visa fa-4x"></i><i class="fa fa-cc-paypal fa-4x"></i><i class="fa fa-cc-mastercard fa-4x"></i></div>
+          <div class="footer__contactus-wrapper">
+            <div class="footer__contactus">
+              <h2 class="footer__contactus-title">Свяжитесь с нами</h2>
+              <p class="footer__contactus-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae fugiat libero similique, perferendis ut cumque sed ad reiciendis veritatis nostrum. Harum voluptates repudiandae inventore quo.</p>
+              <div class="footer__contactus-pays"><i class="fa fa-cc-visa fa-4x"></i><i class="fa fa-cc-paypal fa-4x"></i><i class="fa fa-cc-mastercard fa-4x"></i></div>
+            </div>
           </div>
         </div>
       </div>

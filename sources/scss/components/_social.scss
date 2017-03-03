@@ -1,0 +1,36 @@
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3a3a3a;
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.social__link {
+	color: #fff;
+	margin-right: 20px;
+	&:hover {
+		color: $main_site_color;
+	}
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+	.social_footer {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		justify-content: space-around;
+	}
+}
+
+@media all and (max-width: 650px) {
+
+}

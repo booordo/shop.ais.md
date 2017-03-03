@@ -39,6 +39,36 @@
 	color: #fff;
 }
 
+.header__switch {
+	flex: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.header__lang {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	border-right: 1px solid $border_color;
+	margin-right: 10px;
+}
+
+.header__currency {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	border-right: 1px solid $border_color;
+}
+
 .header__logo {
 	flex: 1;
 }

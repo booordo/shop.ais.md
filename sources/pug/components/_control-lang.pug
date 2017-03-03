@@ -1,0 +1,14 @@
+include ../data/_langs
+
+ul.controls
+	li.controls__item
+		a.controls__link
+			= langs[current_lang].name
+			.controls__icon(style="background-image: url(" + langs[current_lang].url + ");")
+		ul.controls__sublist
+			each lang in langs
+				if lang.name != langs[current_lang].name
+					li.controls__subitem
+						a.controls__link
+							.controls__icon(style="background-image: url(" + lang.url + ");")
+							= lang.name

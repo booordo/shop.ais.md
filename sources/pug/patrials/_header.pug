@@ -1,7 +1,13 @@
 header.header
 	.header__top
 		.wrapper.header__top-wrapper
-			include ../components/_controls
+			.header__switch
+				.header__lang Язык:
+					include ../components/_control-lang
+				.header__currency Валюта:
+					include ../components/_control-currency
+			.header__auth
+				include ../components/_control-auth
 	.header__middle
 		.wrapper.header__middle-wrapper
 			.header__logo

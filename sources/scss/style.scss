@@ -2,9 +2,12 @@
 @import 'modules/_normalize';
 @import 'modules/_scaffolding';
 @import 'patrials/_header';
+@import 'patrials/_main';
+@import 'patrials/_footer';
 @import 'components/_controls';
 @import 'components/_logo';
 @import 'components/_search';
 @import 'components/_phone';
 @import 'components/_navbar';
-@import 'patrials/_footer';
+@import 'components/_social';
+@import 'components/_newsletter';

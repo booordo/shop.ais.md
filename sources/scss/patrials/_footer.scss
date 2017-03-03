@@ -40,8 +40,11 @@
 	flex: 3;
 }
 
-.footer__desc {
+.footer__desc-wrapper {
 	flex: 1;
+}
+
+.footer__desc {
 	padding-right: 15px;
 }
 
@@ -50,12 +53,34 @@
 }
 
 .footer__contactus {
-	flex: 1;
 	padding-left: 15px;
 }
 
-.footer__navbar, .footer__contactus {
+.footer__contactus-wrapper {
+	flex: 1;
+}
+
+.footer__contactus-pays {
+	i {
+		margin-right: 10px;
+	}
+}
+
+.footer__navbar, .footer__contactus-wrapper {
 	border-left: 1px solid $border_color;
+}
+
+.footer__rights {
+	color: #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.rights__link {
+	color: $main_site_color;
+	&:hover {
+		color: $hover_site_color;
+	}
 }
 
 @media all and (max-width: 1400px) {

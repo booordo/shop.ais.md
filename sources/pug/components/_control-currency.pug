@@ -1,0 +1,10 @@
+include ../data/_currencys
+
+ul.controls
+	li.controls__item
+		a.controls__link= currencys[current_currency].name
+		ul.controls__sublist
+			each currency in currencys
+				if currency.name != currencys[current_currency].name
+					li.controls__subitem
+						a.controls__link= currency.name

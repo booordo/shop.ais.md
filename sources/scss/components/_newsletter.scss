@@ -1,0 +1,53 @@
+.newsletter {
+	display: flex;
+	align-items: center;
+}
+
+.newsletter__desc {
+	flex: 1;
+	padding: 5px 15px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.newsletter__title {
+	font-size: 1.285714285714286rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+
+.newsletter__form {
+	flex: 1;
+	display: flex;
+}
+
+.newsletter__input {
+	padding: 10px;
+	flex: 1;
+}
+
+.newsletter__button {
+	text-transform: uppercase;
+	padding: 0 15px;
+	cursor: pointer;
+	background-color: $main_site_color;
+	border: none;
+	color: #fff;
+	&:hover {
+		background-color: $hover_site_color;
+	}
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+
+}
+
+@media all and (max-width: 650px) {
+	
+}
