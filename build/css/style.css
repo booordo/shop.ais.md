@@ -719,6 +719,8 @@ input[type="text"] {
     display: block; }
   .navbar__item:hover .navbar__link {
     background-color: #777777; }
+  .navbar__item:hover .navbar__link_bottom {
+    background-color: #ffffff; }
 
 .navbar__item_bottom {
   margin-bottom: 10px; }
@@ -758,7 +760,6 @@ input[type="text"] {
   border: none;
   padding: 0; }
   .navbar__link_bottom:hover {
-    background-color: transparent;
     color: #00aeef; }
 
 .navbar__bars {

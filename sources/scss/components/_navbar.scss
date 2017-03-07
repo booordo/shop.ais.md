@@ -47,6 +47,9 @@
 		.navbar__link {
 			background-color: #777777;
 		}
+		.navbar__link_bottom {
+			background-color: #ffffff;
+		}
 	}
 }
 
@@ -97,7 +100,6 @@
 	border: none;
 	padding: 0;
 	&:hover {
-		background-color: transparent;
 		color: $main_site_color;
 	}
 }
