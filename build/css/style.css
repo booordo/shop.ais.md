@@ -606,9 +606,8 @@ input[type="text"] {
 .controls__icon {
   display: block;
   width: 20px;
-  height: auto;
+  height: 17px;
   margin-right: 5px;
-  background-size: 100% 100%;
   border: 1px solid #dddddd; }
 
 .controls__sublist {
