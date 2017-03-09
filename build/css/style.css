@@ -766,7 +766,7 @@ input[type="text"] {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #888; }
+  background-color: #3a3a3a; }
 
 .navbar__list_bottom {
   display: block;
@@ -797,17 +797,16 @@ input[type="text"] {
 
 .navbar__sublink {
   display: block;
-  padding: 10px 12px;
+  padding: 12px;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
-  border-bottom: 1px solid #777;
   white-space: nowrap; }
   .navbar__sublink:hover {
-    background-color: #666666; }
+    background-color: #4c4c4c; }
 
 .navbar__link_active {
   background-color: #666666; }
