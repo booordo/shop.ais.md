@@ -1,0 +1,72 @@
+.registration {
+	display: flex;
+	justify-content: center;
+}
+
+.registration__form {
+	display: flex;
+	flex-direction: column;
+	margin: 25px 0;
+	width: 350px;
+	min-width: 270px;
+}
+
+.registration__box {
+	margin-bottom: 10px;
+}
+
+.registration__radio {
+	display: none;
+	&:checked {
+		+.registration__label {
+			&:before {
+				content: "\f14a";
+				font-family: "FontAwesome";
+				color: $main_site_color;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+.registration__label {
+	cursor: pointer;
+	&:first-of-type {
+		margin-right: 10px;
+	}
+	&:before {
+		content: "\f0c8";
+		font-family: "FontAwesome";
+		color: $main_site_color;
+		margin-right: 5px;
+	}
+}
+
+.registration__input {
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid $border_color;
+}
+
+.registration__submit {
+	padding: 15px;
+	border: none;
+	background-color: $main_site_color;
+	color: #fff;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+	
+}
+
+@media all and (max-width: 650px) {
+	.registration__form {
+		margin: 15px 0;
+	}
+}

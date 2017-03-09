@@ -2,9 +2,11 @@ header.header
 	.header__top
 		.wrapper.header__top-wrapper
 			.header__switch
-				.header__lang Язык:
+				.header__lang
+					span.header__controls-name Язык:
 					include ../components/_control-lang
-				.header__currency Валюта:
+				.header__currency
+					span.header__controls-name Валюта:
 					include ../components/_control-currency
 			.header__auth
 				include ../components/_control-auth

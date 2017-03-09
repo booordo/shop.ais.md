@@ -4,11 +4,11 @@ ul.controls
 	li.controls__item
 		a.controls__link
 			img.controls__icon(src=langs[current_lang].url)
-			= langs[current_lang].name
+			span.controls__text= langs[current_lang].name
 		ul.controls__sublist
 			each lang in langs
 				if lang.name != langs[current_lang].name
 					li.controls__subitem
 						a.controls__link
 							img.controls__icon(src=lang.url)
-							= lang.name
+							span.controls__text= lang.name

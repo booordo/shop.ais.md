@@ -24,10 +24,9 @@
 }
 
 @media all and (max-width: 975px) {
-	.social_footer {
-		padding-top: 15px;
-		padding-bottom: 15px;
-		justify-content: space-around;
+	.social {
+		padding: 15px;
+		justify-content: space-between;
 	}
 }
 

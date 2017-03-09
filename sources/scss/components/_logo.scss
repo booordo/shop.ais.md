@@ -6,6 +6,7 @@
 	font-weight: 400;
 	font-size: $h2_text_size;
 	color: $main_site_color;
+	text-decoration: none;
 	&:hover {
 		color: $hover_site_color;
 	}

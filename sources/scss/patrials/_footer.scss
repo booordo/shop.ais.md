@@ -48,6 +48,14 @@
 	padding-right: 15px;
 }
 
+.footer__desc-title {
+	margin: 5px 0 15px;
+}
+
+.footer__desc-text {
+	line-height: 1.5;
+}
+
 .footer__navbar {
 	flex: 1;
 }
@@ -58,6 +66,14 @@
 
 .footer__contactus-wrapper {
 	flex: 1;
+}
+
+.footer__contactus-title {
+	margin: 5px 0 15px;
+}
+
+.footer__contactus-text {
+	line-height: 1.5;
 }
 
 .footer__contactus-pays {
@@ -76,11 +92,16 @@
 	padding-bottom: 10px;
 }
 
-.rights__link {
+.footer__rights__link {
 	color: $main_site_color;
 	&:hover {
 		color: $hover_site_color;
 	}
+}
+
+.footer__title {
+	color: #444;
+	margin: 5px 0 15px 15px;
 }
 
 @media all and (max-width: 1400px) {
@@ -110,11 +131,16 @@
 }
 
 @media all and (max-width: 650px) {
-	.footer__desc {
+	
+	.footer__desc-wrapper {
 		flex-basis: 100%;
 	}
 
-	.footer__contactus {
-		flex-basis: 100%;
+	.footer__desc {
+		padding: 0;
+	}
+
+	.footer__contactus-wrapper {
+		display: none;
 	}
 }

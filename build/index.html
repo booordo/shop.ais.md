@@ -12,22 +12,22 @@
       <div class="header__top">
         <div class="wrapper header__top-wrapper">
           <div class="header__switch">
-            <div class="header__lang">Язык:
+            <div class="header__lang"><span class="header__controls-name">Язык:</span>
               <ul class="controls">
-                <li class="controls__item"><a class="controls__link"><img class="controls__icon" src="images/ru.gif">Русский</a>
+                <li class="controls__item"><a class="controls__link"><img class="controls__icon" src="images/ru.gif"><span class="controls__text">Русский</span></a>
                   <ul class="controls__sublist">
-                    <li class="controls__subitem"><a class="controls__link"><img class="controls__icon" src="images/ro.gif">Romana</a></li>
-                    <li class="controls__subitem"><a class="controls__link"><img class="controls__icon" src="images/en.gif">English</a></li>
+                    <li class="controls__subitem"><a class="controls__link"><img class="controls__icon" src="images/ro.gif"><span class="controls__text">Romana</span></a></li>
+                    <li class="controls__subitem"><a class="controls__link"><img class="controls__icon" src="images/en.gif"><span class="controls__text">English</span></a></li>
                   </ul>
                 </li>
               </ul>
             </div>
-            <div class="header__currency">Валюта:
+            <div class="header__currency"><span class="header__controls-name">Валюта:</span>
               <ul class="controls">
-                <li class="controls__item"><a class="controls__link">MDL</a>
+                <li class="controls__item"><a class="controls__link">лей, MDL</a>
                   <ul class="controls__sublist">
-                    <li class="controls__subitem"><a class="controls__link">USD</a></li>
-                    <li class="controls__subitem"><a class="controls__link">EUR</a></li>
+                    <li class="controls__subitem"><a class="controls__link">доллар, USD</a></li>
+                    <li class="controls__subitem"><a class="controls__link">евро, EUR</a></li>
                   </ul>
                 </li>
               </ul>
@@ -48,7 +48,7 @@
           </div>
           <div class="header__search">
             <form class="search">
-              <input class="search__input" placeholder="Поиск товаров" type="text">
+              <input class="search__input" placeholder="Поиск" type="text">
               <button class="search__button" type="submit"><i class="fa fa-search"></i></button>
             </form>
           </div>
@@ -120,8 +120,8 @@
             </div>
           </div>
           <div class="footer__navbar">
+            <h2 class="footer__title">Основное</h2>
             <div class="navbar navbar_bottom">
-              <h2 class="navbar__title">Категории</h2>
               <ul class="navbar__list navbar__list_bottom">
                 <li class="navbar__item navbar__item_bottom"><a class="navbar__link navbar__link_bottom" href="index.html">Главная</a></li>
                 <li class="navbar__item navbar__item_bottom"><a class="navbar__link navbar__link_bottom" href="sections.html">Каталог</a></li>
@@ -132,8 +132,8 @@
             </div>
           </div>
           <div class="footer__navbar">
+            <h2 class="footer__title">Каталог</h2>
             <div class="navbar navbar_bottom">
-              <h2 class="navbar__title">Категории</h2>
               <ul class="navbar__list navbar__list_bottom">
                 <li class="navbar__item navbar__item_bottom"><a class="navbar__link navbar__link_bottom" href="index.html">Главная</a></li>
                 <li class="navbar__item navbar__item_bottom"><a class="navbar__link navbar__link_bottom" href="sections.html">Каталог</a></li>
@@ -154,9 +154,11 @@
       </div>
       <div class="footer__bottom">
         <div class="wrapper footer__bottom-wrapper">
-          <div class="footer__rights">All Rights Reserved.	</div>
+          <div class="footer__rights">All Rights Reserved.</div>
         </div>
       </div>
     </footer>
+    <script src="/assets/jquery/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

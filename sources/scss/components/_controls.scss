@@ -19,15 +19,19 @@
 	background-color: #fff;
 	padding: 7px 10px;
 	cursor: pointer;
+	border: none;
+	outline: none;
+	color: #444;
+	text-decoration: none;
 	&:hover {
 		color: $main_site_color;
 	}
 }
 
 .controls__icon {
-	display: block;
+	display: none;
 	width: 20px;
-	height: 17px;
+	height: 16px;
 	margin-right: 5px;
 	border: 1px solid $border_color;
 }
@@ -38,7 +42,8 @@
 	display: none;
 	position: absolute;
 	z-index: 1000;
-	width: calc(100% + 2px);
+	min-width: calc(100% + 2px);
+	white-space: nowrap;
 	left: -1px;
 	top: 30px;
 }
@@ -54,15 +59,34 @@
 	}
 }
 
+.controls__text {
+
+}
+
 @media all and (max-width: 1400px) {
 	
 }
 
 @media all and (max-width: 975px) {
 	.controls__link {
+		padding: 15px 10px;
+		user-select: none;
 		&:last-of-type {
 			border-right: none; 
 		}
+	}
+
+	.controls__icon {
+		display: block;
+		margin: 0 5px;
+	}
+
+	.controls__text {
+		display: none;
+	}
+
+	.controls__sublist {
+		top: 46px;
 	}
 }
 

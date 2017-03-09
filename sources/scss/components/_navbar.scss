@@ -1,17 +1,9 @@
 .navbar {
-
+	position: relative;
 }
 
 .navbar_bottom {
 	padding: 0 15px;
-}
-
-.navbar__title {
-	color: #444;
-}
-
-.navbar__title_bottom {
-	margin: 0 0 15px;
 }
 
 .navbar__list {
@@ -25,6 +17,7 @@
 .navbar__sublist {
 	display: none;
 	position: absolute;
+	z-index: 1000;
 	top: 40px;
 	left: 0;
 	margin: 0;
@@ -124,7 +117,7 @@
 		z-index: 1000;
 		flex-flow: column;
 		position: absolute;
-		top: 41px;
+		top: 53px;
 		width: 100%;
 		background-color: #444444;
 	}
@@ -135,14 +128,27 @@
 
 	.navbar__bars {
 		display: block;
-		padding-left: 15px;
+		font-size: 2rem;
+		padding: 10px 15px;
 	}
 
 	.navbar__link {
 		border-bottom: 1px solid #555555;
 		border-left: none;
+		padding: 18px 15px;
 		&:hover {
 			background-color: #666666;
+		}
+	}
+
+	.navbar__item {
+		&:hover {
+			.navbar__sublist {
+				display: block;
+				width: 100%;
+				position: relative;
+				top: 0;
+			}
 		}
 	}
 	

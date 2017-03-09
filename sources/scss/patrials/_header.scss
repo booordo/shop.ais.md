@@ -85,3 +85,53 @@
 .header__navbar {
 	flex: 1;
 }
+
+.header__controls-name {
+
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+	
+	.header__controls-name {
+		display: none;
+	}
+
+	.header__lang {
+		margin: 0;
+	}
+
+	.header__top-wrapper {
+		padding: 0;
+	}
+
+	.header__middle-wrapper {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.header__logo {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.header__search {
+		margin: 0;
+	}
+
+	.header__phone {
+		display: none;
+	}
+	
+	.header__bottom-wrapper {
+		padding: 0;
+	}
+
+}
+
+@media all and (max-width: 650px) {
+	
+}
