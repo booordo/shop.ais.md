@@ -1,0 +1,14 @@
+include ../data/_slides
+
+.slider
+	.slider__item-wrapper
+		each slide in slides
+			.slider__item
+				.slider__img-wrapper
+					img.slider__img(src=slide.img)
+				.slider__desc-wrapper
+					.slider__desc
+						h3.slider__subtitle= slide.subtitle
+						h1.slider__title= slide.title
+						p.slider__text= slide.text
+						a.slider__link(href=slide.link) Подробнее

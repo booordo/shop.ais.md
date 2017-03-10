@@ -1,3 +1,27 @@
 .main {
 	flex: 1 0 auto;	
 }
+
+.main__wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.main__sidebar-wrapper {
+	flex: 1;
+}
+
+.main__content-wrapper {
+	flex: 3;
+}
+
+.main__sidebar {
+	
+}
+
+.main__content {
+	padding-left: 15px;
+}
