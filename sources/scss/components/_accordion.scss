@@ -1,0 +1,47 @@
+.accordion {
+	margin-top: 15px;
+}
+
+.accordion__item {
+	border: 1px solid $border_color;
+	border-bottom: none;
+	&:last-of-type {
+		border-bottom: 1px solid $border_color;
+	}	
+}
+
+.accordion__link {
+	display: flex;
+	padding: 10px 15px;
+	background-color: #fff;
+	color: $main_text_color;
+	cursor: pointer;
+	font-weight: 700;
+	&:hover {
+		color: $main_site_color;
+	}
+	&:before {
+		content: "\f0fe";
+		font-family: "FontAwesome";
+		margin-right: 10px;
+	}
+}
+
+.accordion__link_active {
+	color: $main_site_color;
+	border-bottom: 1px solid $border_color;
+	&:before {
+		content: "\f146";
+		font-family: "FontAwesome";
+		margin-right: 10px;
+	}
+}
+
+.accordion__text {
+	display: none;
+	background-color: #eeeeee;
+	margin: 0;
+	padding: 10px 15px;
+	font-size: 1rem;
+	line-height: 1.571428571428571em;
+}

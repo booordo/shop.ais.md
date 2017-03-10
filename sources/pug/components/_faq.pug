@@ -1,0 +1,11 @@
+include ../data/_faqs
+
+.section.section_sidebar
+	.section__top
+		.section__title ЧАВО
+	.section__bottom
+		.accordion
+			each faq in faqs
+				.accordion__item
+					a.accordion__link= faq.question
+					p.accordion__text= faq.answer

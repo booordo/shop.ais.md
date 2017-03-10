@@ -7,7 +7,7 @@
 
 .slider__item-wrapper {
 	position: relative;
-	left: -000%;
+	left: 0px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	transition: left 0.5s;
@@ -87,7 +87,40 @@
 	border-radius: 25px;
 	background-color: rgba(0,0,0,0.5);
 	color: #fff;
+	transition: background-color 0.1s;
 	&:hover {
 		background-color: rgba(0,0,0,0.2);
 	}
+}
+
+.slider__control {
+	position: absolute;
+	top: calc(50% - 15px);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	&:hover {
+		background-color: rgba(0,0,0,0.2);
+	}
+}
+
+.slider__control_left {
+	left: 10px;
+	padding-right: 3px;
+	padding-bottom: 1px;
+}
+
+.slider__control_right {
+	right: 10px;
+	padding-left: 3px;
 }

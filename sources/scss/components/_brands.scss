@@ -1,0 +1,37 @@
+.brands {
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid $border_color;
+}
+
+.brands__item {
+	flex: 1 0 50%;
+	border-top: 1px solid $border_color;
+	border-left: 1px solid $border_color;
+	border-right: 1px solid $border_color;
+	border-bottom: none;
+	&:nth-of-type(2n) {
+		border-top: 1px solid $border_color;
+		border-left: none;
+		border-right: 1px solid $border_color;
+		border-bottom: none;
+	}
+	height: 150px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.brands__img {
+	max-width: 90%;
+	max-height: 150px;
+}

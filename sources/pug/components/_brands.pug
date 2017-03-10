@@ -1,0 +1,10 @@
+include ../data/_brands
+
+.section.section_sidebar
+	.section__top
+		.section__title Бренды
+	.section__bottom
+		.brands
+			each brand in brands
+				.brands__item
+					img.brands__img(src=brand.img)

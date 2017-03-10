@@ -5,14 +5,14 @@ include ../data/_goods
 		.section__title Лучшее
 		a.section__link(href="#") Показать все
 	.section__bottom
-		each good in goods
+		- for (var i = 0; i < 2; i++)
 			.section__element-wrapper
 				.section__element
 					.section__element-top
-						img.section__element-img(src=good.img)
+						img.section__element-img(src=goods[i].img)
 					.section__element-middle
-						span.section__element-title= good.title
-						span.section__element-price= good.price
+						span.section__element-title= goods[i].title
+						span.section__element-price= goods[i].price
 					.section__element-bottom
-						a.section__element-link.section__element-link_basket(href=good.link) В корзину	
-					a.section__element-link.section__element-link_view(href=good.link)
+						a.section__element-link.section__element-link_basket(href=goods[i].link) В корзину	
+					a.section__element-link.section__element-link_view(href=goods[i].link)
