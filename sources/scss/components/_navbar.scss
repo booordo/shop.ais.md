@@ -17,7 +17,7 @@
 .navbar__sublist {
 	display: none;
 	position: absolute;
-	z-index: 1000;
+	z-index: 2000;
 	top: 40px;
 	left: 0;
 	margin: 0;
@@ -47,7 +47,7 @@
 }
 
 .navbar__subitem {
-
+	
 }
 
 .navbar__item_bottom {
@@ -113,7 +113,7 @@
 	
 	.navbar__list {
 		display: none;
-		z-index: 1000;
+		z-index: 1500;
 		flex-flow: column;
 		position: absolute;
 		top: 53px;

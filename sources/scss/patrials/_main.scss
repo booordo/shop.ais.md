@@ -25,3 +25,35 @@
 .main__content {
 	padding-left: 15px;
 }
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+	.main__slider {
+		display: none;
+	}
+
+	.main__wrapper {
+		flex-direction: column;
+	}
+
+	.main__sidebar-wrapper {
+		flex: 1;
+		order: 2;
+	}
+
+	.main__content-wrapper {
+		flex: 3;
+		order: 1;
+	}
+
+	.main__content {
+		padding-left: 0;
+	}
+}
+
+@media all and (max-width: 650px) {
+	
+}

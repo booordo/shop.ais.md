@@ -21,8 +21,8 @@
 	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	margin-bottom: 15px;
+	align-content: stretch;
 }
 
 .section__title {
@@ -60,12 +60,17 @@
 .section__element-wrapper {
 	width: calc(25% - 11.25px);
 	margin-top: 15px;
+	margin-right: 15px;
+	&:nth-of-type(4n) {
+		margin-right: 0;
+	}
 }
 
 .section__element {
 	position: relative;
 	border: 1px solid $border_color;
 	transition: border 0.1s;
+	height: 100%;
 	&:hover {
 		border: 1px solid $main_site_color;
 		.section__element-bottom {
@@ -150,65 +155,43 @@
 }
 
 .section_sidebar {
-	
-	.section__top {
-
-	}
 
 	.section__bottom {
 		flex-direction: column;
-	}
-
-	.section__title {
-
-	}
-
-	.section__link {
-
 	}
 
 	.section__element-wrapper {
 		width: 100%;
 	}
 
-	.section__element {
+}
 
-	}
+@media all and (max-width: 1400px) {
+	
+}
 
-	.section__element-top {
-
-	}
-
-	.section__element-middle {
-
+@media all and (max-width: 975px) {
+	.section__element-wrapper {
+		width: calc(50% - 7.5px);
+		margin-top: 15px;
+		margin-right: 15px;
+		&:nth-of-type(4n) {
+			margin-right: 0;
+		}
+		&:nth-of-type(2n) {
+			margin-right: 0;
+		}
 	}
 
 	.section__element-bottom {
-
+		opacity: 1;
 	}
+}
 
-	.section__element-img {
-
-	}
-
-	.section__element-title {
-
-	}
-
-	.section__element-price {
-
-	}
-
-	.section__element-link {
-
-	}
-
-	.section__element-link_basket {
-
-	}
-
-	.section__element-link_view {
-
-	}
-
+@media all and (max-width: 650px) {
+	.section__element-wrapper {
+		width: calc(100%);
+		margin-top: 15px;
+		margin-right: 0;
+	}	
 }

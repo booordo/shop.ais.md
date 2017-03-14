@@ -538,6 +538,20 @@ input[type="text"] {
 .main__content {
   padding-left: 15px; }
 
+@media all and (max-width: 975px) {
+  .main__slider {
+    display: none; }
+  .main__wrapper {
+    flex-direction: column; }
+  .main__sidebar-wrapper {
+    flex: 1;
+    order: 2; }
+  .main__content-wrapper {
+    flex: 3;
+    order: 1; }
+  .main__content {
+    padding-left: 0; } }
+
 .footer {
   flex-shrink: 0; }
 
@@ -776,7 +790,7 @@ input[type="text"] {
 .navbar__sublist {
   display: none;
   position: absolute;
-  z-index: 1000;
+  z-index: 2000;
   top: 40px;
   left: 0;
   margin: 0;
@@ -847,7 +861,7 @@ input[type="text"] {
 @media all and (max-width: 975px) {
   .navbar__list {
     display: none;
-    z-index: 1000;
+    z-index: 1500;
     flex-flow: column;
     position: absolute;
     top: 53px;
@@ -995,8 +1009,8 @@ input[type="text"] {
   display: -o-flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  align-content: stretch; }
 
 .section__title {
   background-color: #00aeef;
@@ -1027,12 +1041,16 @@ input[type="text"] {
 
 .section__element-wrapper {
   width: calc(25% - 11.25px);
-  margin-top: 15px; }
+  margin-top: 15px;
+  margin-right: 15px; }
+  .section__element-wrapper:nth-of-type(4n) {
+    margin-right: 0; }
 
 .section__element {
   position: relative;
   border: 1px solid #dddddd;
-  transition: border 0.1s; }
+  transition: border 0.1s;
+  height: 100%; }
   .section__element:hover {
     border: 1px solid #00aeef; }
     .section__element:hover .section__element-bottom {
@@ -1108,6 +1126,24 @@ input[type="text"] {
 
 .section_sidebar .section__element-wrapper {
   width: 100%; }
+
+@media all and (max-width: 975px) {
+  .section__element-wrapper {
+    width: calc(50% - 7.5px);
+    margin-top: 15px;
+    margin-right: 15px; }
+    .section__element-wrapper:nth-of-type(4n) {
+      margin-right: 0; }
+    .section__element-wrapper:nth-of-type(2n) {
+      margin-right: 0; }
+  .section__element-bottom {
+    opacity: 1; } }
+
+@media all and (max-width: 650px) {
+  .section__element-wrapper {
+    width: calc(100%);
+    margin-top: 15px;
+    margin-right: 0; } }
 
 .slider {
   background-image: url("../images/slider_bg.png");
