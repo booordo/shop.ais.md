@@ -36,7 +36,13 @@
 }
 
 .header__bottom-wrapper {
-	color: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
 
 .header__switch {

@@ -26,6 +26,11 @@
 	padding-left: 15px;
 }
 
+.main__slogans {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
 @media all and (max-width: 1400px) {
 	
 }
@@ -51,6 +56,10 @@
 
 	.main__content {
 		padding-left: 0;
+	}
+
+	.main__slogans {
+		display: none;
 	}
 }
 

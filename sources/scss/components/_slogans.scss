@@ -1,0 +1,50 @@
+.slogans {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.slogans__item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border: 3px solid $border_color;
+	width: 31%;
+}
+
+.slogans__item-img-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.slogans__item-desc-wrapper {
+	padding: 10px 10px 10px 0;
+}
+
+.slogans__item-title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: $h4_text_size;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.slogans__item-subtitle {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: $h6_text_size;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: $small_text_color;
+}

@@ -1,0 +1,76 @@
+.small-basket {
+	background-color: $main_site_color;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	height: 100%;
+	&:hover {
+		background-color: $hover_site_color;
+		&:before {
+			border-right-color: $hover_site_color;
+		}
+	} 
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: -20px;
+		border-right: 20px solid $main_site_color;
+		border-bottom: 20px solid transparent;
+		border-top: 20px solid transparent;
+		cursor: pointer;
+	}
+	i {
+		margin-right: 10px;
+	}	
+}
+
+.small-basket__link {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.small-basket__title {
+	margin-right: 10px;
+}
+
+.small-basket__count {
+	display: block;
+	padding: 5px;
+	background-color: #fff;
+	color: #000;
+	border-radius: 4px;
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+	.small-basket {
+		padding-left: 15px;
+		padding-right: 15px;
+		&:before {
+			display: none;
+		}
+		i {
+			font-size: 1.5rem;
+		}
+	}
+	.small-basket__count {
+		padding: 5px 10px;
+	}
+}
+
+@media all and (max-width: 650px) {
+	
+}

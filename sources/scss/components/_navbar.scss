@@ -1,5 +1,5 @@
 .navbar {
-	position: relative;
+	
 }
 
 .navbar_bottom {
@@ -83,6 +83,10 @@
 
 .navbar__link_active {
 	background-color: #666666;
+}
+
+.navbar__sublink_active {
+	background-color: #4c4c4c;
 }
 
 .navbar__link_bottom {

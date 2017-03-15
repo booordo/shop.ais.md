@@ -1,0 +1,10 @@
+include ../data/_slogans
+
+.slogans
+	each slogan in slogans
+		.slogans__item
+			.slogans__item-img-wrapper
+				img.slogans__item-img(src=slogan.img)
+			.slogans__item-desc-wrapper
+				h1.slogans__item-title= slogan.title
+				h3.slogans__item-subtitle= slogan.subtitle
