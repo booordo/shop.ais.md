@@ -4,13 +4,13 @@
 	.main__wrapper
 		.main__sidebar-wrapper
 			.main__sidebar
-				include ../../components/_catalog-list-sidebar
+				+section(goods, 2, true, "Лучшее")
 				include ../../components/_faq
 				include ../../components/_brands
 		.main__content-wrapper
 			.main__content
-				include ../../components/_catalog-list-content
-				include ../../components/_catalog-list-content
-				include ../../components/_catalog-list-content
+				+section(goods, 0, false, "Смартфоны")
+				+section(goods, 0, false, "Планшеты")
+				+section(goods, 0, false, "Фототехника")
 	.main__slogans
 		include ../../components/_slogans

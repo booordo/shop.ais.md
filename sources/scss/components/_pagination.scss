@@ -7,9 +7,14 @@
 	border: 1px solid $border_color;
 }
 
+.pagination_top {
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+
 .pagination_bottom {
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .pagination_news {

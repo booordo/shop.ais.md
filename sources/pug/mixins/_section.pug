@@ -1,0 +1,31 @@
+mixin section(goods, count, sidebar, name)
+	.section(class=sidebar ? "section_sidebar" : "")
+		if name
+			.section__top
+				.section__title= name
+				a.section__link(href="#") Показать все
+		.section__bottom
+			if count
+				- for (var i = 0; i < count; i++)
+					.section__element-wrapper
+						.section__element
+							.section__element-top
+								img.section__element-img(src=goods[i].img)
+							.section__element-middle
+								span.section__element-title= goods[i].title
+								span.section__element-price= goods[i].price
+							.section__element-bottom
+								a.section__element-link.section__element-link_basket(href=goods[i].link) В корзину	
+							a.section__element-link.section__element-link_view(href=goods[i].link)
+			else
+				each good in goods
+					.section__element-wrapper
+						.section__element
+							.section__element-top
+								img.section__element-img(src=good.img)
+							.section__element-middle
+								span.section__element-title= good.title
+								span.section__element-price= good.price
+							.section__element-bottom
+								a.section__element-link.section__element-link_basket(href=good.link) В корзину
+							a.section__element-link.section__element-link_view(href=good.link)

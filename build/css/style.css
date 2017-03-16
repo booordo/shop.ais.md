@@ -1513,9 +1513,13 @@ input[type="text"] {
   align-items: center;
   border: 1px solid #dddddd; }
 
+.pagination_top {
+  margin-bottom: 0;
+  margin-top: 15px; }
+
 .pagination_bottom {
   margin-top: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .pagination_news {
   justify-content: center; }
@@ -1564,3 +1568,35 @@ input[type="text"] {
 
 .pagination__page_next {
   font-size: 1.3rem; }
+
+.feedback {
+  margin-bottom: 15px; }
+
+.feedback__map {
+  min-height: 400px;
+  margin-bottom: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+
+.feedback__title {
+  display: block;
+  font-size: 1.285714285714286rem;
+  font-weight: 700;
+  margin-bottom: 10px; }
+
+.feedback__item {
+  margin-bottom: 5px; }
+
+.feedback__bold {
+  font-weight: 700; }
+
+.feedback__link {
+  color: #00aeef; }
+  .feedback__link:hover {
+    color: #0094cb; }
+
+@media all and (max-width: 975px) {
+  .feedback__map {
+    min-height: 300px;
+    background-size: cover; } }

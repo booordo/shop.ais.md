@@ -1,0 +1,10 @@
+.main.wrapper
+	.main__wrapper
+		.main__sidebar-wrapper
+			.main__sidebar
+				+section(goods, 2, true, "Лучшее")
+				include ../../components/_faq
+		.main__content-wrapper
+			.main__content
+				include ../../components/_news-list
+				+pagination("bottom", "center", false)

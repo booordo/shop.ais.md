@@ -1,0 +1,11 @@
+.main.wrapper
+	.main__wrapper
+		.main__sidebar-wrapper
+			.main__sidebar
+				include ../../components/_filter
+		.main__content-wrapper
+			.main__content
+				+section-title("Планшеты")
+				+pagination("top", "left", true)
+				+section(goods)
+				+pagination("bottom", "left", true)
