@@ -1,0 +1,133 @@
+.item {
+
+}
+
+.item__header {
+	margin-bottom: 15px;
+	display: flex;
+}
+
+.item__body {
+
+}
+
+.item__slider {
+	border: 1px solid $border_color;
+	flex: 6;
+}
+
+.item__box {
+	flex: 6;
+	padding: 0 10px 0 20px;
+}
+
+.item__name {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 1.7rem;
+}
+
+.item__line {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.item__available {
+
+}
+
+.item__price {
+	color: $main_site_color;
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.item__price_old {
+	color: #ccc;
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+.item__title {
+	font-weight: 700;
+	font-size: 1rem;
+	color: #444;
+}
+
+.item__text {
+	line-height: 1.6rem;
+}
+
+.item__price {
+
+}
+
+.item__action {
+	
+}
+
+.item__count {
+	margin-right: 10px;
+	font-size: 1.5rem;
+	width: 50px;
+}
+
+.item__link {
+	padding: 10px 15px;
+	background-color: $main_site_color;
+	color: #fff;
+	display: inline-block;
+}
+
+.item__link_basket {
+
+}
+
+.item__message {
+
+}
+
+.item__message_success {
+	color: green;
+}
+
+.item__tabs {
+
+}
+
+.item__tab {
+
+}
+
+.item__desc {
+
+}
+
+.item__reviews {
+
+}
+
+.item__options {
+
+}
+
+@media all and (max-width: 1400px) {
+	
+}
+
+@media all and (max-width: 975px) {
+	.item__header {
+		flex-direction: column;
+	}
+
+	.item__box {
+		padding: 10px 0 10px;
+	}
+}
+
+@media all and (max-width: 650px) {
+	
+}
