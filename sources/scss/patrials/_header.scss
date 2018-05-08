@@ -1,5 +1,5 @@
 .header {
-	flex-shrink: 0;
+	flex: 0 0 auto;
 }
 
 .header__top {
@@ -46,7 +46,7 @@
 }
 
 .header__switch {
-	flex: 1;
+	flex: 1 0 auto;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -76,11 +76,11 @@
 }
 
 .header__logo {
-	flex: 1;
+	flex: 1 0 auto;
 }
 
 .header__search {
-	flex: 1;
+	flex: 1 0 auto;
 	margin-right: 40px;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .header__navbar {
-	flex: 1;
+	flex: 1 0 auto;
 }
 
 .header__controls-name {

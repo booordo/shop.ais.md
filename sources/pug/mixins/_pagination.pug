@@ -1,4 +1,4 @@
-mixin pagination(position, align, view)
+mixin pagination(position, align, view, sort)
 	.pagination(class="pagination_" + position + " pagination_" + align)
 		if view
 			.pagination__box.pagination__box_view
@@ -6,7 +6,15 @@ mixin pagination(position, align, view)
 					i.fa.fa-th
 				a.pagination__view.pagination__view_list
 					i.fa.fa-th-list
-		.pagination__box.pagination__box-page
+		if sort
+			.pagination__box.pagination__box_sort
+				span.pagination__label Sort by:
+				select.pagination__select(id="catSort")
+					option.pagination__option(value="price_asc") Price (high to low)
+					option.pagination__option(value="price_desc") Price (low to high)
+					option.pagination__option(value="name_asc") Name (A-Z)
+					option.pagination__option(value="name_desc") Name (Z-A)
+		.pagination__box.pagination__box_page
 			a.pagination__page.pagination__page_active 1
 			a.pagination__page 2
 			a.pagination__page 3

@@ -10,7 +10,7 @@
 }
 
 .brands__item {
-	flex: 1 0 50%;
+	width: 50%;
 	border-top: 1px solid $border_color;
 	border-left: 1px solid $border_color;
 	border-right: 1px solid $border_color;
@@ -32,6 +32,7 @@
 }
 
 .brands__img {
-	max-width: 90%;
-	max-height: 150px;
+	width: 90%;
+	max-width: 140px;
+	max-height: 140px;
 }

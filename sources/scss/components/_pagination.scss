@@ -4,6 +4,7 @@
 	margin-bottom: 15px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	border: 1px solid $border_color;
 }
 
@@ -26,11 +27,24 @@
 }
 
 .pagination__box_view {
-	flex: 1;
+	
 }
 
 .pagination__box_page {
 	
+}
+
+.pagination__box_sort {
+	align-items: center;
+}
+
+.pagination__label {
+	margin-right: 15px;
+}
+
+.pagination__select {
+	border: 1px solid $border_color;
+	padding: 5px 10px;
 }
 
 .pagination__view {

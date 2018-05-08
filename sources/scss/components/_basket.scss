@@ -34,7 +34,7 @@
 
 
 .basket__col {
-	flex: 1 0 10%;
+	width: 10%;
 	display: flex;
 	align-items: center;
 	padding: 20px;
@@ -55,7 +55,7 @@
 }
 
 .basket__name {
-	flex: 5 0 45%;
+	width: 45%;
 }
 
 .basket__counter {
@@ -71,7 +71,7 @@
 
 .basket__sum {
 	justify-content: center;
-	flex: 1 0 15%;
+	width: 15%;
 }
 
 .basket__delete {
@@ -146,11 +146,11 @@
 
 @media all and (max-width: 975px) {
 	.basket__col {
-		flex: 1 0 15%;
+		width: 15%;
 	}
 
 	.basket__name {
-		flex: 5 0 25%;
+		width: 25%;
 	}
 }
 

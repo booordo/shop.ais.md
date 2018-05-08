@@ -1,5 +1,5 @@
 .news {
-	
+	width: 100%;
 }
 
 .news_one {
@@ -19,11 +19,12 @@
 }
 
 .news__img {
-	flex: 1;
+	flex: 1 0 auto;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 80% auto;
 	margin-right: 15px;
+	width: 25%;
 }
 
 .news__img_one {
@@ -34,7 +35,8 @@
 }
 
 .news__desc {
-	flex: 3;
+	flex: 3 0 auto;
+	width: 75%;
 }
 
 .news__title {

@@ -1,0 +1,11 @@
+include ../data/_carousel
+
+.carousel
+	.carousel__preview
+		each item in carousel
+			.carousel__item(class = item.active ? "carousel__item_active" : "")
+				img.carousel__img(src=item.src)
+	.carousel__view
+		each item in carousel
+			if ( item.active )
+				img.carousel__img.carousel__img_view(src=item.src)
